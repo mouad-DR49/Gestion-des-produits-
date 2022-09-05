@@ -6,8 +6,9 @@ import java.io.Serializable;
 
 @Entity
 public class Produit implements Serializable {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id ;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String designation;
     private double prix;
     private int quantite;
